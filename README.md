@@ -3,14 +3,13 @@
 # Repository structure
 
 The main files in this repository are:
-
-* `app.py` is the actual Python/Flask application
-* `requirements.txt` is a file with all dependencies
+ in Demo project
 
 # Commands
 ```
-Install Python3
-Install PIP3
-pip install -r requirements.txt
-python3 app.py
+to show helm chart
+**helm list**
+**helm install k8stohelm demochart**
+for upgrade we can can use**
+Helm upgtade k8stohelm demochart**
 ```
