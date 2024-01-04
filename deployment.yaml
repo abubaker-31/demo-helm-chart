@@ -1,0 +1,18 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: mydeployment
+spec:
+   replicas: 1
+   selector:     
+    matchLabels:
+     name: deployment
+   template:
+     metadata:
+       name: pythonpod
+       labels:
+         name: deployment
+     spec:
+      containers:
+        - name: c00
+          image: "abubaker40/abk-kubernetes:img"
